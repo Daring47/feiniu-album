@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.application' version '8.1.0'
+}
+
+android {
+    namespace 'com.feiniu.album'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.feiniu.album"
+        minSdk 24            // Android 7.0+
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false   // 保持关闭，避免混淆导致 JS 桥接失效
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // 纯系统 WebView，无需第三方依赖
+}

@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.FnosAlbum" parent="android:Theme.DeviceDefault.NoActionBar">
+        <!-- 沉浸式深色状态栏/导航栏，配合 App 自身的深色界面 -->
+        <item name="android:statusBarColor">#0b0d10</item>
+        <item name="android:navigationBarColor">#0b0d10</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>
